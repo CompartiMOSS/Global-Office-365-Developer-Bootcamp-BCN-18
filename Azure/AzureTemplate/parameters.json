@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "logicAppName": {
+            "value": "logicAppTestoffice365"
+        },
+        "cognitiveName": {
+            "value": "cogniTestoffice365"
+        },
+        "databaseCosmosNameProperty": {            
+            "value": "cosmosoffice365prop"
+        },
+        "databaseCosmosName": {                
+            "value": "cosmosoffice365db"
+        },        
+        "appName": {
+            "value": "functionoffice365"
+        },
+        "storageAccountType": {            
+            "value": "Standard_LRS"            
+        }
+    }
+}
