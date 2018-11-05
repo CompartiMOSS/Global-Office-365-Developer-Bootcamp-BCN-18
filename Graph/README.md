@@ -17,7 +17,7 @@ Laboratorio impartido durante el __Global Office 365 Developer Bootcamp Barcelon
 
 Microsoft Graph API es la pasarela a todos nuestros datos en la nube de Microsoft. Nos va a permitir poder acceder a estos datos desde cualquier plataforma: web, dispositivo movil, bots, procesos en background, etc.
 
-![graph-intro](./Assets/graph_intro.jpg)
+![graph-intro](./Assets/Graph_intro.jpg)
 
 En la siguiente imagen podemos ver los endpoints principales disponibles en Graph. Como podemos observar, podemos acceder a datos de nuestros usuarios en Azure AD, ficheros en SharePoint, Eventos, Email, Contactos en Outlook, Teams, Planner, etc.
 
