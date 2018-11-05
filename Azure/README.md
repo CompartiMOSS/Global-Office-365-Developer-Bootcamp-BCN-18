@@ -7,8 +7,8 @@
 - WebHooks
 - Servicios que se conectan a office365 y realizan operaciones.
 
-Dentro de este último apartado nos encontramos con las LogicApps que nos permiten conectarnos a los diferentes productos de office365 entre otros y reaccionar a cambios ejecutando un flujo de trabjao.
-También podemos integrar nuestras aplicaciones medainte AzureAD y hacer SSO.
+Dentro de este último apartado nos encontramos con las LogicApps que nos permiten conectarnos a los diferentes productos de Office 365 entre otros y reaccionar a cambios ejecutando un flujo de trabjao.
+También podemos integrar nuestras aplicaciones mediante AzureAD y hacer SSO.
 
 ## Objectives
 
@@ -22,7 +22,7 @@ Que aprenderemos:
 ## Prerequisites
 Que es necesario:
 
-- Un tenant de office365. Podéis crearos una cuenta gratuita aquí: [https://products.office.com/es-es/try](https://products.office.com/es-es/try "Office trial")
+- Un tenant de Office 365. Podéis crearos una cuenta gratuita de developer aquí: [https://developer.microsoft.com/es-es/office/dev-program](https://developer.microsoft.com/es-es/office/dev-program "Office 365 Devs")
 
 - Una subscripción de Azure. Podéis crearos una cuenta gratuita aquí: [https://azure.microsoft.com/es-es/offers/ms-azr-0044p/](https://azure.microsoft.com/es-es/offers/ms-azr-0044p/ "Azure Tiral")
 - La última versión de Visual Studio 2017. Podeis descargaros la versión community de aquí:
