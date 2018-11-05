@@ -21,7 +21,7 @@ Microsoft Graph API es la pasarela a todos nuestros datos en la nube de Microsof
 
 En la siguiente imagen podemos ver los endpoints principales disponibles en Graph. Como podemos observar, podemos acceder a datos de nuestros usuarios en Azure AD, ficheros en SharePoint, Eventos, Email, Contactos en Outlook, Teams, Planner, etc.
 
-![graph-endpoints](./Assets/graph-endpoints.jpg)
+![graph-endpoints](./Assets/graph-endpoints.JPG)
 
 ## Authentication basada en Azure Active Directory
 
