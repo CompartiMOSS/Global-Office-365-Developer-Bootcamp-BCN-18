@@ -1,3 +1,5 @@
-# Global Office 365 Developer Bootcamp Madrid 2018
+# Global Office 365 Developer Bootcamp Barcelona 2018
 
-## SPFx:
+## SPFx for beginners
+
+## SPFx for ninjas
