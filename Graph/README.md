@@ -25,4 +25,59 @@ En la siguiente imagen podemos ver los endpoints principales disponibles en Grap
 
 ## Authentication basada en Azure Active Directory
 
+Para poder utilizar la Graph API, primero debemos obtener un Token a través de Azure Active Directory. Antes de negociar dicho token, debemos registrar la Aplicación en Azure AD. Para ello navegaremos el portal de Azure en [portal.azure.com](https://portal.azure.com) y entramos en la sección de Azure Active Directory -> App registrations (preview)
 
+![Azure AD Apps](./Assets/azuread-apps.jpg)
+
+__Nota__: Desde hace algunas semanas, Microsoft ha liberado una nueva experiencia de registro de Apps. En esta nueva experiencia, las Apps quedan registradas para utilizar la version V2 Endpoint de Azure AD. Podéis ver las diferencias entre la V1 y V2 en el siguiente enlace [https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison](https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison)
+
+En la siguiente imagen podéis ver un resumen de las diferencias:
+![Azure AD v1-v2](./Assets/azuread-v1-v2-compared.jpg)
+
+Si hacemos click en _New registration_, nos aparecerá el formulario de inicio de registro, donde introduciremos el nombre de la App, qué tipo de cuentas queremos soportar:
+1. Cuentas de organización de la misma Tenant
+2. Cualquier cuenta de organización de cualquier Directorio (lo que sería una app multi-tenant)
+3. Cualquier cuenta de organización de cualquier Directorio, y cuentas personales Microsoft (Outlook, Hotmail, etc)
+
+Y finalmente, indicaremos posibles URIs de redirección. Esto es necesario para escenarios donde queremos obtener un Token con la identidad del usuario logado. Este mismo valor habrá que propocionarlo desde código, cuando se negocie el Token.
+
+La siguiente imagen muestra los datos introducidos para seguir el laboratorio:
+
+![Azure AD Registration](./Assets/azuread-register-1.jpg)
+
+1. Nombre: Office365 Dev Bootcamp 2018
+2. Cuentas en la Organización
+3. Public client - myapp://auth
+
+Finalmente, pinchamos en "Register", y ya tendremos registrada nuestra App. Sin embargo, debemos configurar algunas cosas más antes de poder invocar a Graph.
+
+Primero, debemos copiar y guardar el _Application (client) ID_
+
+![Azure AD Client ID](./Assets/azuread-clientid.jpg)
+
+Ahora, debemos configurar una Key (secret)
+
+![Azure AD Secret](./Assets/azuread-secret.jpg)
+
+Debemos copiar el _secret_ generado (este es el único momento en que estará visible en el portal, así que guardalo bien, o tendrás que re-crear otro).
+
+![Azure AD Secret](./Assets/azuread-secret2.jpg)
+
+En este punto, asegúrate que tienes la siguiente información:
+1. __ClientID__
+2. __Secret__
+3. __Redirect URI__
+
+El siguiente paso será configurar los permisos de la App, para que pueda invocar a la Graph API. Para ello, navegaremos a la sección __API Permissions__
+
+Por defecto se configura la App para que el usuario poder hacer sign-in y leer su perfil de usuario.
+
+![Azure AD Permissions](./Assets/azuread-add-permissions.jpg)
+
+Para añadir más permisos, pulsamos sobre _Add a permission_. Nos abrirá otra _blade_ con las diferentes APIs expuestas por Microsoft, entre ellas, y destacada, la __Microsoft Graph__, así que pulsamos en ella. El siguiente paso es especificar si queremos permisos Delegados __Delegated permissions__, o de Aplicación __Application permissions__. Los primeros son permisos basados en el contexto del usuario logado (previamente habrá algún tipo de Sign In por el usuario). El segundo, son permisos de App, normalmente para escenarios donde no hay un Sign In de usuario, por ejemplo procesos en Background (Azure functions, etc).
+
+Seleccionamos __Delegated permissions__ y nos apareceerán todos los posibles permisos que podemos asignar. Hacemos scroll hasta la sección de __Mail__, y seleccionamos permisos de __Mail.Read__ lo que permitirá a nuestra App, leer nuestros Emails:
+
+![Azure AD Mail.Read](./Assets/azuread-mail-read.jpg)
+
+En este punto, tenemos la App completamente registrada y configurada, así que es momento de saltar a Visual Studio, y ver cómo podemos obtener un Token para invocar a Graph API.
