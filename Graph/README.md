@@ -23,7 +23,7 @@ En la siguiente imagen podemos ver los endpoints principales disponibles en Grap
 
 ![graph-endpoints](./Assets/graph-endpoints.JPG)
 
-## Authentication basada en Azure Active Directory
+### Authentication basada en Azure Active Directory
 
 Para poder utilizar la Graph API, primero debemos obtener un Token a través de Azure Active Directory. Antes de negociar dicho token, debemos registrar la Aplicación en Azure AD. Para ello navegaremos al portal de Azure en [portal.azure.com](https://portal.azure.com) y entramos en la sección de __Azure Active Directory -> App registrations (preview)__
 
@@ -32,6 +32,7 @@ Para poder utilizar la Graph API, primero debemos obtener un Token a través de 
 __Nota__: Desde hace algunas semanas, Microsoft ha liberado una nueva experiencia de registro de Apps. En esta nueva experiencia, las Apps quedan registradas para utilizar la versión V2 Endpoint de Azure AD. Podéis ver las diferencias entre la V1 y V2 en el siguiente enlace [https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison](https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison)
 
 En la siguiente imagen podéis ver un resumen de las diferencias:
+
 ![Azure AD v1-v2](./Assets/azuread-v1-v2-compared.jpg)
 
 Si hacemos click en _New registration_, nos aparecerá el formulario de inicio de registro, donde introduciremos el nombre de la App y qué tipo de cuentas queremos soportar:
@@ -84,7 +85,7 @@ Seleccionamos __Delegated permissions__ y nos apareceerán todos los posibles pe
 
 En este punto, tenemos la App completamente registrada y configurada, así que es momento de saltar a Visual Studio, y ver cómo podemos obtener un Token para invocar a Graph API.
 
-## Obtener Token para Graph desde una Applicación de consola (Delegated permissions)
+### Obtener Token para Graph desde una Applicación de consola (Delegated permissions)
 
 En esta sección vamos a abrir visual studio para crear un proyecto de aplicación de consola, donde obtendremos un Token para Graph utilizando los permisos delegados de la Azure AD App que hemos registrado en el punto anterior.
 
@@ -185,7 +186,7 @@ Y obtener el Asunto de nuestros emails:
 
 ![Graph Emails](./Assets/azuread-emails.jpg)
 
-## Obtener Token con Application Permissions
+### Obtener Token con Application Permissions
 
 En el lab anterior hemos visto como podemos obtener un Token con login interactivo del usuario. Ahora vamos a ver como obtener el Token con permisos de Aplicación, lo que nos será útil en escenarios de processos en background.
 
