@@ -14,7 +14,7 @@
   
 ![alt text3](../media/SSO/VS2017MVC3.png)
 
-3 - Informar los campos y seguir las inidcaciones. **Importante**: El usuario con el que hayáis  hecho el login en Visual Studio debe ser un usuario de vuestro AAD que pueda añadir aplicaciones.
+3 - Informar los campos y seguir las indicaciones. **Importante**: El usuario con el que hayáis  hecho el login en Visual Studio debe ser un usuario de vuestro AAD que pueda añadir aplicaciones.
 
 4 - Una vez finalizado abrir el fichero Startup.cs, os debe aparecer lo siguiente:
 
