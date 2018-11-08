@@ -6,6 +6,8 @@ En este repositorio podrás encontrar el material utilizado en el Global Office 
 
 El objetivo del laboratorio es el desarrollo de un ChatBot que pueda incluirse en cualquier página de Sharepoint. Para ello crearemos una extensión SPFx que se conectará a un Bot implementado con la herramienta [QnA Maker](https://www.qnamaker.ai/). 
 
+![ChatBotExtension](https://github.com/CompartiMOSS/Global-Office-365-Developer-Bootcamp-BCN-18/blob/master/SPFX/SPFX-Beginners/assets/01_ChatBotExtension.png)
+
 ### Prerequisitos
 
 Antes de hacer el laboratorio, es necesario realizar los pasos que se indican a continuación:
@@ -44,10 +46,18 @@ Podéis crear un Bot desde la web de [QnAMaker](https://www.qnamaker.ai/), en la
 
 1. En una suscripción de Azure crear un *QnA Maker*.
 
+![QnAMakerService](https://github.com/CompartiMOSS/Global-Office-365-Developer-Bootcamp-BCN-18/blob/master/SPFX/SPFX-Beginners/assets/02_AzureQnaMaker.png)
+
 
 2. [Crear una Knowledge Base](https://www.qnamaker.ai/Create), donde deberemos elegir el servicio de Azure creado previamente, indicar el nombre que queremos darle a esta base de datos, así como el fichero o las URLs mediante las cuáles construir el Bot.
 
+![KnowledgeBase](https://github.com/CompartiMOSS/Global-Office-365-Developer-Bootcamp-BCN-18/blob/master/SPFX/SPFX-Beginners/assets/03_ConnectQnaService.png)
+
+
 3. Una vez tenemos la *Knowledge Base* podemos ver qué preguntas y respuestas contiene, y gestionar las entradas detectadas. Si realizamos cualquier modificación deberemos guardarla y entrenar al bot (save and train), para finalmente publicarla.
+
+![DeploymentDetails](https://github.com/CompartiMOSS/Global-Office-365-Developer-Bootcamp-BCN-18/blob/master/SPFX/SPFX-Beginners/assets/04_ShareKB.png)
+
 
 En la sección de *Deployment details* podremos ver ejemplos de como hacer la llamada al servicio, y que usaremos en el desarrollo de nuestra extensión SPFx (necesitaremos el id del QnA Maker creado en Azure, así como el EndpointKey).
 
@@ -93,6 +103,9 @@ code .
 * Crear la carpeta *services*, donde ubicaremos los ficheros con la lógica para hacer la llamada a la API de QnA Maker.
 
 * Crear el fichero *QnaServices.ts* en la carpeta creada anteriormente.
+
+![Carpetas](https://github.com/CompartiMOSS/Global-Office-365-Developer-Bootcamp-BCN-18/blob/master/SPFX/SPFX-Beginners/assets/05_Carpetas.png)
+
 
 6. Editaremos el fichero *QnAServices.ts* que contendrá la lógica para hacer la llamada a la API del QnA Maker.
 
@@ -351,13 +364,5 @@ Si todos los pasos se han ejecutado correctamente, deberíamos ver nuestro ChatB
 
 * **Ferran Chopo** - [Twitter](https://twitter.com/fchopo)
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
