@@ -29,7 +29,7 @@ Flux es una patrón/arquitectura  para el manejo y el flujo de los datos en una 
 
 Estamos acostumbrados a las arquitecturas MVC en la que hay un flujo de datos bidireccional, es decir cualquier modificación en el servidor se modifica en la vista y viceversa, esto hace que en flujos complejos los problemas de rendimiento están a la orden del día. Con Flux esto cambia, propone una arquitectura en la que el flujo de datos es unidireccional. Los datos viajan desde la vista por medio de acciones y llegan a un Store desde el cual se actualizará la vista de nuevo.
 
-![patronflux](./assets/flux.png)
+![patronflux](./flux.png)
 
 Teniendo todo el flujo de la aplicación centralizado es mucho más sencillo depurar las aplicaciones y encontrar los errores en la misma.
 
@@ -73,7 +73,7 @@ Los conceptos claves de Redux:
 
 Para empezar con el workshop, tenemos que crear nuestra solución spfx. Para ello vamos a crear un proyecto webpart haciendo uso del generador de Yeoman para spfx. Cuando nos pida la elección del FrameWork seleccionaremos naturalmente ReactJS.
 
-![yo](./assets/yo.PNG)
+![yo](./yo.PNG)
 
 **Nota :** En este workshop solamente nos centramos en la parte del Framework no en la forma en la que se va a desplegar en el CDN por lo que los parámetros que hay puestos para ello NO tienen porque ser los recomendados.
 
