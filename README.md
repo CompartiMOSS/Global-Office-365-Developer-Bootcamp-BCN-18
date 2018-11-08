@@ -2,9 +2,9 @@
 
 ##Agenda:
 
-* 9:00 - 9:30 Key Note
+* 9:00 - 9:30 KeyNote
 
-* 9:30 - 10:30 SPFX for begginers (Angel Rubén-Yui / Ferran Chopo)
+* 9:30 - 10:30 SPFX for beginners (Angel Rubén-Yui / Ferran Chopo)
 
 * 10:30 - 11:30 SPFX for ninjas (Adrían Diaz / Sergio Hernandez)
 
