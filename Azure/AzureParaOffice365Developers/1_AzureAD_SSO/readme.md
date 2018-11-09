@@ -16,13 +16,13 @@
 
 3 - Informar los campos y seguir las indicaciones. **Importante**: El usuario con el que hayáis  hecho el login en Visual Studio debe ser un usuario de vuestro AAD que pueda añadir aplicaciones.
 
-![alt text3](../media/SSO/azure_ad_configuration.png)
+![alt text3](../media/SSO/azure_ad_configuration.PNG)
 
-![alt text3](../media/SSO/azure_ad_configuration_2.png)
+![alt text3](../media/SSO/azure_ad_configuration_2.PNG)
 
-![alt text3](../media/SSO/azure_ad_configuration_3.png)
+![alt text3](../media/SSO/azure_ad_configuration_3.PNG)
 
-![alt text3](../media/SSO/code_replace.png)
+![alt text3](../media/SSO/code_replace.PNG)
 
 4 - Una vez finalizado abrir el fichero Startup.cs, os debe aparecer lo siguiente:
 
