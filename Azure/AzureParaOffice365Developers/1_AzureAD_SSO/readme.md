@@ -16,6 +16,14 @@
 
 3 - Informar los campos y seguir las indicaciones. **Importante**: El usuario con el que hayáis  hecho el login en Visual Studio debe ser un usuario de vuestro AAD que pueda añadir aplicaciones.
 
+![alt text3](../media/SSO/azure_ad_configuration.PNG)
+
+![alt text3](../media/SSO/azure_ad_configuration_2.PNG)
+
+![alt text3](../media/SSO/azure_ad_configuration_3.PNG)
+
+![alt text3](../media/SSO/code_replace.PNG)
+
 4 - Una vez finalizado abrir el fichero Startup.cs, os debe aparecer lo siguiente:
 
 	public void ConfigureServices(IServiceCollection services)
@@ -43,7 +51,7 @@
 	    "ConfigView": "API"
 	}
 
-6 - Ejecutamos la web.
+6 - Compilar el proyecto y ejecutamos la web.  Si da un error de compilación debido a "app.UseBrowserLink();", comenta esa linea.
 
 ![alt text3](../media/SSO/VS2017MVC4.png)
 
@@ -58,3 +66,6 @@
 9 - Sin cerrar pestañas, abrimos una nueva y entramos en el portal de Azure: **[portal.azure.com](https://portal.azure.com "portal azure")**. Veremos que entramos sin tener que hacer login.
 
 **¡YA TENEMOS SSO!**
+
+Ir al siguiente ejecicio: [2-Creación infraestructura Azure](../2_Creación_infraestructura_Azure/readme.md)
+
