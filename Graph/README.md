@@ -114,7 +114,9 @@ El TenantID es el identificador de tu Azure AD Tenant, que también puedes encon
         {
             AuthenticationResult authResult;
 
-            var publicClientApp = new PublicClientApplication(ClientId);
+            var authority = string.Format(Authority, Tenant);
+
+            var publicClientApp = new PublicClientApplication(ClientId, authority);
 
             var accounts = await publicClientApp.GetAccountsAsync();
 
