@@ -25,8 +25,15 @@ Que es necesario:
 - Un tenant de Office 365. Podéis crearos una cuenta gratuita de developer aquí: [https://developer.microsoft.com/es-es/office/dev-program](https://developer.microsoft.com/es-es/office/dev-program "Office 365 Devs")
 
 - Una subscripción de Azure. Podéis crearos una cuenta gratuita aquí: [https://azure.microsoft.com/es-es/offers/ms-azr-0044p/](https://azure.microsoft.com/es-es/offers/ms-azr-0044p/ "Azure Tiral")
-- La última versión de Visual Studio 2017. Podeis descargaros la versión community de aquí:
+- La última versión de Visual Studio 2017 (instalar cualquier actualización pendiente - puede tardar más de media hora). Podeis descargaros la versión community de aquí:
 [https://visualstudio.microsoft.com/es/vs/community/](https://visualstudio.microsoft.com/es/vs/community/ "VS2017")
+- El modulo de AzureRM para Powershell instalado y actualizado
+```	
+	Install-Module -Name AzureRM -AllowClobber
+	
+	Update-Module -Name AzureRM
+```
+
 ## Exercises
 
 Este hands on lab contiene los siguientes ejercicios.

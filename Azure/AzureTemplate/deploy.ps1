@@ -25,20 +25,19 @@
 #>
 
 param(
- [Parameter(Mandatory=$True)]
  [string]
  $subscriptionId,
 
- [Parameter(Mandatory=$True)]
- [string]
- $resourceGroupName,
 
  [string]
- $resourceGroupLocation,
+ $resourceGroupName = "O365DevBootcampAzure",
 
- [Parameter(Mandatory=$True)]
  [string]
- $deploymentName,
+ $resourceGroupLocation = "West Europe",
+
+
+ [string]
+ $deploymentName = $resourceGroupName,
 
  [string]
  $templateFilePath = "template.json",
@@ -71,6 +70,15 @@ Write-Host "Logging in...";
 Login-AzureRmAccount;
 
 # select subscription
+if(!$subscriptionId) { 
+    $availableSubscriptions = Get-AzureRmSubscription;
+    if($availableSubscriptions.Count -gt 1) {
+       $availableSubscriptions|select Name,SubscriptionId;
+       $subscriptionId = Read-Host -Prompt 'Provide Azure SubscriptionId' 
+    } else {
+        $subscriptionId = $availableSubscriptions[0].SubscriptionId;
+    }
+}
 Write-Host "Selecting subscription '$subscriptionId'";
 Select-AzureRmSubscription -SubscriptionID $subscriptionId;
 
