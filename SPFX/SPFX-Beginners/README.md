@@ -205,7 +205,7 @@ export interface IFooterChatProps
 }
 ```
 
-11. A continuación editaremos el fichero FooterChat.ts, que es el componente React.
+11. A continuación editaremos el fichero FooterChat.tsx, que es el componente React.
 
 * Inicialmente introduciremos todos los imports de las librerías que necesitamos:
 
