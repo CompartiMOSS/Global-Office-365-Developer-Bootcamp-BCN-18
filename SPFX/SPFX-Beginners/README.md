@@ -29,7 +29,7 @@ spo site appcatalog add --url https://<nombe_del_tenant>.sharepoint.com/sites/Ap
 5. [Habilitar el CDN para el tenant de Office 365](https://docs.microsoft.com/es-es/office365/enterprise/use-office-365-cdn-with-spo), ya que será necesario para poder hacer el deploy de nuestros desarrollos.
 
 ```
-spo cdn set –type Public –enabled true
+spo cdn set –-type Public –-enabled true
 ```
 
 6. Crear un *Sitio de Equipo* para probar nuestros desarrollos (en este caso le llamamos *DevSite*, por ejemplo).
@@ -346,7 +346,7 @@ Para poder instalar el componente utilizaremos Office365Cli mediante los pasos s
 
 ```
 spo login https://tutenant-admin.sharepoint.com
-spo add -p C:\TuCarpetaProyecto\sharepoint\solution\qna-chat.sppkg
+spo app add -p C:\TuCarpetaProyecto\sharepoint\solution\qna-chat.sppkg
 ```
 
 2. Al añadir nuestro aplicación al catálogo, recibiremos un *id*, que utilizaremos para hacer el *deploy* y posteriormente instalarla en la colección de sitios que queramos:
@@ -362,7 +362,7 @@ Si todos los pasos se han ejecutado correctamente, deberíamos ver nuestro ChatB
 
 * **Ángel Rubén Yui** - [Twitter](https://twitter.com/angelrubenyui)
 
-* **Ferran Chopo** - [Twitter](https://twitter.com/fchopo)
+* **Ferran Chopo** - Freelance IT Consultant and Trainer - [Twitter](https://twitter.com/fchopo)
 
 
 
