@@ -2,6 +2,13 @@
 
 En este repositorio podrás encontrar el material utilizado en el Global Office Developer Bootcamp 2018 en Barcelona, durante el cual aprenderemos a desarrollar con Sharepoint Framework (SPFx).
 
+
+## Ponentes
+
+* **Ángel Rubén Yui** - [Twitter](https://twitter.com/angelrubenyui)
+
+* **Ferran Chopo** - [Twitter](https://twitter.com/fchopo)
+
 ## Laboratorio
 
 El objetivo del laboratorio es el desarrollo de un ChatBot que pueda incluirse en cualquier página de Sharepoint. Para ello crearemos una extensión SPFx que se conectará a un Bot implementado con la herramienta [QnA Maker](https://www.qnamaker.ai/). 
@@ -358,11 +365,6 @@ spo app install -i id_de_aplicacion -s https://tutenant.sharepoint.com/sites/Dev
 
 Si todos los pasos se han ejecutado correctamente, deberíamos ver nuestro ChatBot en el sitio de Sharepoint indicado.
 
-## Autores
-
-* **Ángel Rubén Yui** - [Twitter](https://twitter.com/angelrubenyui)
-
-* **Ferran Chopo** - Freelance IT Consultant and Trainer - [Twitter](https://twitter.com/fchopo)
 
 
 
